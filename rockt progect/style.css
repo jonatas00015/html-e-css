@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  /*tira a margin de todo site por causa do * */
+  padding: 0;
+  /*tira todo o padding o site por causa * */
+  box-sizing: border-box;
+  /*faz com que o google dessida como dividir os tamanhos dos elentos baseada na quantidade de oixels que vc colocou de form automatizada */
+}
+
+a {
+  text-decoration: none;
+  /*servi para tira aquele traço debaixo dos links */
+}
+img {
+  width: 100%;
+  height: auto;
+  /*E para deixar todas as images com 100% d lagura e a autura automatica i*/
+}
+
+.container {
+  width: 100%;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  /*isso servi para colocar uma magin no site */
+}
+
+nav {
+  display: flex;
+  /*colocar um elemto do lado do outro */
+  justify-content: space-between;
+  /*colocar os elementos separados */
+}
+
+body {
+  font: 400 1rem 'DM sans', sans-serif;
+}
+
+h1 {
+  font: 700 1.875rem 'Poppins', sans serif;
+}
