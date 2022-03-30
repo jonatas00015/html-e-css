@@ -9,34 +9,94 @@
   /*faz com que o google dessida como dividir os tamanhos dos elentos baseada na quantidade de oixels que vc colocou de form automatizada */
 }
 
-a {
-  text-decoration: none;
-  /*servi para tira aquele traço debaixo dos links */
+:root {
+  --background: rgba(249, 249, 249, 1);
+  --background2: rgba(255, 255, 255, 1);
+  --verde-claro: rgba(204, 244, 230, 1);
+  --verde-escuro: rgba(105, 185, 157, 1);
+  --escuro: rgba(15, 36, 29, 1);
+}
+
+body {
+  font: 400 1rem 'DM sans', sans-serif;
+  background-color: var(--background2);
+}
+header {
+  border-bottom: solid black 1px;
+}
+
+.section {
+  margin: 5rem 0;
 }
 img {
   width: 100%;
   height: auto;
   /*E para deixar todas as images com 100% d lagura e a autura automatica i*/
+  border-radius: 0.25rem;
 }
 
 .container {
   width: 100%;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+
   /*isso servi para colocar uma magin no site */
 }
 
 nav {
+  height: 4.5rem;
   display: flex;
   /*colocar um elemto do lado do outro */
   justify-content: space-between;
   /*colocar os elementos separados */
+  align-items: center;
 }
-
-body {
-  font: 400 1rem 'DM sans', sans-serif;
+#home .conteiner {
+  margin: 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 h1 {
   font: 700 1.875rem 'Poppins', sans serif;
+}
+a {
+  text-decoration: none;
+  /*servi para tira aquele traço debaixo dos links */
+}
+.logo {
+  font: 700 1.31rem 'poppins', sans-serif;
+  color: var(--escuro);
+}
+span {
+  color: var(--verde-escuro);
+}
+.grid {
+  display: grid;
+}
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
+}
+#home .image img {
+  position: relative;
+  right: 2.93rem;
+}
+#home .image {
+  position: relative;
+}
+#home .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background-color: var(--verde-claro);
+  position: absolute;
+  z-index: 0;
+  top: -16.7%;
+  left: 16.8%;
+  border-radius: 0.25rem;
+}
+.buttom {
+  background-color: var(--verde-escuro);
+  color: var(--verde-claro);
+  text-decoration-color: var(--verde-claro);
 }
