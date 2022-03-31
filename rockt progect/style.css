@@ -10,6 +10,7 @@
 }
 
 :root {
+  --header-height: 4.5rem;
   --background: rgba(249, 249, 249, 1);
   --background2: rgba(255, 255, 255, 1);
   --verde-claro: rgba(204, 244, 230, 1);
@@ -20,9 +21,23 @@
 body {
   font: 400 1rem 'DM sans', sans-serif;
   background-color: var(--background2);
+  -webkit-font-smoothing: antialiased;
 }
 header {
   border-bottom: solid black 1px;
+  margin-bottom: 2rem;
+  display: flex;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: var(--background);
+  width: 100%;
+}
+
+#home {
+  overflow: hidden;
 }
 
 .section {
@@ -42,13 +57,19 @@ img {
 }
 
 nav {
-  height: 4.5rem;
+  height: var(--header-height);
   display: flex;
   /*colocar um elemto do lado do outro */
   justify-content: space-between;
   /*colocar os elementos separados */
   align-items: center;
+  width: 100%;
 }
+
+main {
+  margin-top: var(--header-height);
+}
+
 #home .conteiner {
   margin: 0;
   margin-left: 1.5rem;
@@ -97,6 +118,28 @@ span {
 }
 .buttom {
   background-color: var(--verde-escuro);
-  color: var(--verde-claro);
-  text-decoration-color: var(--verde-claro);
+  color: aliceblue;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem 'DM sans';
+  transition: background 0.3s;
+}
+
+.buttom:hover {
+  background: var(--escuro);
+}
+.diviner1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    #69b99d 0%,
+    rgba(204, 244, 230, 0.34) 100%
+  );
+}
+#home .text p {
+  margin-bottom: 2rem;
+  max-width: 100%;
 }
