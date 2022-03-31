@@ -9,22 +9,83 @@
   /*faz com que o google dessida como dividir os tamanhos dos elentos baseada na quantidade de oixels que vc colocou de form automatizada */
 }
 
+a {
+  text-decoration: none;
+  /*servi para tira aquele traço debaixo dos links */
+}
+
+img {
+  width: 100%;
+  height: auto;
+  /*E para deixar todas as images com 100% d lagura e a autura automatica i*/
+  border-radius: 0.25rem;
+}
+
 :root {
+  --: 159;
   --header-height: 4.5rem;
   --background: rgba(249, 249, 249, 1);
   --background2: rgba(255, 255, 255, 1);
   --verde-claro: rgba(204, 244, 230, 1);
   --verde-escuro: rgba(105, 185, 157, 1);
   --escuro: rgba(15, 36, 29, 1);
+  --title-color: hsl(var(--hue) 41% 10%);
 }
 
 body {
   font: 400 1rem 'DM sans', sans-serif;
   background-color: var(--background2);
+  color: var(--escuro);
   -webkit-font-smoothing: antialiased;
 }
-header {
-  border-bottom: solid black 1px;
+
+h1 {
+  font: 700 1.875rem 'Poppins', sans serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.buttom {
+  background-color: var(--verde-escuro);
+  color: aliceblue;
+  height: 3.5rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 2rem;
+  border-radius: 0.25rem;
+  font: 500 1rem 'DM sans', sans-serif;
+  transition: background 0.3s;
+}
+
+.buttom:hover {
+  background: var(--escuro);
+}
+
+.diviner1 {
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    #69b99d 0%,
+    rgba(204, 244, 230, 0.34) 100%
+  );
+}
+
+.conteiner {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  margin: 5rem 0;
+}
+
+#header {
+  border-bottom: solid rgb(255, 255, 255) 1px;
   margin-bottom: 2rem;
   display: flex;
 
@@ -36,110 +97,68 @@ header {
   width: 100%;
 }
 
-#home {
-  overflow: hidden;
-}
-
-.section {
-  margin: 5rem 0;
-}
-img {
-  width: 100%;
-  height: auto;
-  /*E para deixar todas as images com 100% d lagura e a autura automatica i*/
-  border-radius: 0.25rem;
-}
-
-.container {
-  width: 100%;
-
-  /*isso servi para colocar uma magin no site */
-}
-
 nav {
   height: var(--header-height);
   display: flex;
   /*colocar um elemto do lado do outro */
+  align-items: center;
   justify-content: space-between;
   /*colocar os elementos separados */
-  align-items: center;
   width: 100%;
+}
+
+.logo {
+  font: 700 1.31rem 'poppins', sans-serif;
+  color: var(--escuro);
+}
+
+span {
+  color: var(--verde-escuro);
 }
 
 main {
   margin-top: var(--header-height);
 }
 
-#home .conteiner {
-  margin: 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+#home {
+  overflow: hidden;
 }
 
-h1 {
-  font: 700 1.875rem 'Poppins', sans serif;
+#home .conteiner {
+  margin: 0;
 }
-a {
-  text-decoration: none;
-  /*servi para tira aquele traço debaixo dos links */
-}
-.logo {
-  font: 700 1.31rem 'poppins', sans-serif;
-  color: var(--escuro);
-}
-span {
-  color: var(--verde-escuro);
-}
-.grid {
-  display: grid;
-}
-#home .text {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  text-align: center;
-}
-#home .image img {
-  position: relative;
-  right: 2.93rem;
-}
+
 #home .image {
   position: relative;
 }
+
 #home .image::before {
   content: '';
   height: 100%;
   width: 100%;
   background-color: var(--verde-claro);
   position: absolute;
-  z-index: 0;
   top: -16.7%;
   left: 16.8%;
+  z-index: 0;
   border-radius: 0.25rem;
-}
-.buttom {
-  background-color: var(--verde-escuro);
-  color: aliceblue;
-  height: 3.5rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 2rem;
-  border-radius: 0.25rem;
-  font: 500 1rem 'DM sans';
-  transition: background 0.3s;
 }
 
-.buttom:hover {
-  background: var(--escuro);
+#home .image img {
+  position: relative;
+  right: 2.93rem;
 }
-.diviner1 {
-  height: 1px;
-  background: linear-gradient(
-    270deg,
-    #69b99d 0%,
-    rgba(204, 244, 230, 0.34) 100%
-  );
+
+#home .text {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  text-align: center;
 }
+
 #home .text p {
   margin-bottom: 2rem;
-  max-width: 100%;
+}
+
+#home .text h1 {
+  margin-bottom: 1rem;
 }
