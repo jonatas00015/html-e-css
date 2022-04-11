@@ -72,8 +72,17 @@ body {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsla(var(--hue), 36%, 57%, 1) 0%,
-    hsla(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1),
+    hsla(var(--hue), 65%, 88%, 0.34)
+  );
+}
+
+.diviner2{
+  height: 1px;
+  background: linear-gradient(
+    270deg,
+    hsla(var(--hue), 65%, 88%, 0.34),
+     hsla(var(--hue), 36%, 57%, 1) 
   );
 }
 
@@ -90,6 +99,17 @@ body {
 .section {
   padding: 5rem 0;
 }
+.section .title{
+  margin-bottom: 1rem;
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--base-color);
+}
 
 #header {
   border-bottom: solid rgb(255, 255, 255) 1px;
@@ -102,6 +122,10 @@ body {
   z-index: 100;
   background-color: var(--body-color);
   width: 100%;
+}
+
+#header.scroll{
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -249,7 +273,53 @@ main {
   margin: 0;
 }
 
-#abaut {
-  overflow: hidden;
-  
+#abaut .image {
+  position: relative;
+}
+
+#abaut .image::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: var(--base-color-second);
+  position: absolute;
+  top: -8.3%;
+  left: -32%;
+  z-index: 0;
+}
+#abaut .image img {
+  position: relative;
+}
+#abaut .image::before,
+#abaut .image{
+  border-radius: 0.25rem;
+}
+
+#abaut .text{
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+/*=================================services===================*/
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: 0.25rem solid var(--base-color);
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-align: center;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color);
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
