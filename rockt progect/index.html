@@ -7,6 +7,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="icomoon/style.css" />
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -129,27 +134,76 @@
         </div>
       </section>
 
-      <section class="section" id="depoimentos">
-        <h2>Depoimentos de quem já passou por aqui</h2>
-        <div>
-          <p>
-            Eu sou cliente do Beautysalon há 5 anos e não troco por nada!
-            Certamente meu cabelo mudou muito depois que comecei a tratar
-            somente com produtos naturais e veganos. São profissionais incríveis
-            e qualificados.
-          </p>
-          <img src="" alt="" />
-          <p>Wanessa Souza</p>
-        </div>
-        <div>
-          <p>
-            Minha mãe frequenta o salão há anos e me levou um dia para conhecer.
-            Minha experiência foi incrível, eu continuo fazendo o a terapia
-            capilar e isso salvou o meu cabelo. Adoro todos os profissionais do
-            Beautysalon.
-          </p>
-          <img src="" alt="" />
-          <p>Luna Falcão</p>
+      <div class="diviner1"></div>
+
+      <section class="section" id="testimonials">
+        <div class="container swiper">
+          <header>
+            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+          </header>
+          <div class="testimonals swiper-container">
+            <div class="swiper-wrapper">
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Eu sou cliente do Beautysalon há 5 anos e não troco por
+                    nada! Certamente meu cabelo mudou muito depois que comecei a
+                    tratar somente com produtos naturais e veganos. São
+                    profissionais incríveis e qualificados.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://media-exp1.licdn.com/dms/image/C5603AQHw1f3ROf0W5Q/profile-displayphoto-shrink_200_200/0/1547281009442?e=1652313600&v=beta&t=NvpZK4MUhRiCYkknLgMuPL2Rcjj9T4oC5aIEtqkkLOQ"
+                      alt=""
+                    />
+                    vanessa-souza
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Eu sou cliente do Beautysalon há 5 anos e não troco por
+                    nada! Certamente meu cabelo mudou muito depois que comecei a
+                    tratar somente com produtos naturais e veganos. São
+                    profissionais incríveis e qualificados.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://media-exp1.licdn.com/dms/image/C4E03AQGRj9ajIGdKcg/profile-displayphoto-shrink_200_200/0/1628967195637?e=1652313600&v=beta&t=eo2QiE2OzqER6DObNxfoMBZ1jT22KBFypnv_OxkyGR8"
+                      alt=""
+                    />
+                    maria
+                  </cite>
+                </blockquote>
+              </div>
+
+              <div class="testimonial swiper-slide">
+                <blockquote>
+                  <p>
+                    <span>&ldquo;</span>
+                    Eu sou cliente do Beautysalon há 5 anos e não troco por
+                    nada! Certamente meu cabelo mudou muito depois que comecei a
+                    tratar somente com produtos naturais e veganos. São
+                    profissionais incríveis e qualificados.
+                  </p>
+                  <cite>
+                    <img
+                      src="https://cf.shopee.com.br/file/37a67269680512b7fe688f048e128e27"
+                      alt=""
+                    />
+                    karine-musho
+                  </cite>
+                </blockquote>
+              </div>
+            </div>
+
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
         </div>
       </section>
 
@@ -175,7 +229,13 @@
       <img src="" alt="" />
       <img src="" alt="" />
     </footer>
+    <!-- swiper -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <!-- scrollreveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- main.js -->
     <script src="main.js"></script>
   </body>
 </html>
