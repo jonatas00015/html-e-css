@@ -51,11 +51,7 @@ body {
   color: var(--title-color);
   -webkit-font-smoothing: auto;
 }
-#h1 {
-  font: 700 30px 'Poppins', sans serif;
-  color:black;
-  -webkit-font-smoothing: auto;
-}
+
 .buttom {
   background-color: var(--base-color);
   color: aliceblue;
