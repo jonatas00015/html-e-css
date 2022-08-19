@@ -6,7 +6,7 @@
   padding: 0;
   /*tira todo o padding o site por causa * */
   box-sizing: border-box;
-  /*faz com que o google dessida como dividir os tamanhos dos elentos baseada na quantidade de oixels que vc colocou de form automatizada */
+  /*faz com que o google dessida como dividir os tamanhos dos elentos baseada na quantidade de pixels que vc colocou de form automatizada */
 }
 
 ul {
